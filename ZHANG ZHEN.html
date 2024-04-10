@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>CS1102 Group Project</title>    
+    <style>
+    
+        .big-content-title{font-weight: bold;  /* 加粗字体 */
+                    font-size: 40px;    /* 增大字号 */
+                                                         }
+        .small-content-title{font-weight: bold;
+                    font-size: 30px
+        }
+        
+        body{font-family: 'Times New Roman', Times, serif; 
+        font-size: 20px
+                        }
+
+
+    </style>
+
+
+</head>
+<body>
+  <img src="CityU.png" alt=CityU >
+    
+<script>
+    window.onload = function showalert() {
+        alert("Welcome! This webpage will explain Limitations of LLM and related suggestions.");
+    };
+</script>
+
+<h1 class="h1"> CS1102-Course Project -2023/2024 Semester B  </h1>
+
+<h2>
+     FOK Tsz Ying (56574045)  SUN Ying Kwing (57140726)
+     ZHANG Zhen (57846711) CHAU Yin Tau (57140820)
+</h2>
+ 
+<h3> 
+    <a href= https://maysunmay.github.io/CS1102LLMs> Home </a>
+</h3>
+
+
+<p class="big-content-title"; style="color: orangered;">Limitations of LLM（Large Language Models）</p>
+<p class="small-content-title">1. Dependency on Training Data</p>
+    Although LLMs can "mimic" their understanding of the world through large-scale data training, they do not truly "understand" common sense knowledge. According to research from Lewis and Mitchell (2024), LLMs do not possess the ability to perform accurately in situations not encountered in their training. This shows that LLMs can only operate in the areas they trained but LLM is unable to create new ideas for some areas if it has never been trained in these areas.  Lacking real-world experience, LLM just tries to simulate past experience based on training data but they have no understanding of the content they export. This may lead to inaccurate or illogical answers in certain situations. Thus the performance and capability of a LLM rely on the quality as well as diversity of the training data, leading to responses that vary in terms of accuracy.<br>
+    <br>
+    <p class="small-content-title">2. Social biases</p>
+    When utilizing large language models (LLMs), it's essential to be mindful that the outputs may carry inherent biases. The training data for these models often comes from the Internet, which reflects some societal attitudes and prejudices. Consequently, LLMs might unintentionally produce outputs influenced by these biases. It will assume something should be like traditional thinking but not concerned with value changes. For example, defaulting to stereotypical assumptions about professions like surgeons or nurses. To counteract such biases, one must employ strategies that include carefully crafting prompts and judicious application of LLMs not to reinforce any unwanted biases. Ethical use demands recognition of these potential biases and taking proactive steps to prevent the propagation of content that could be considered harmful or discriminatory.<br>
+    <br>
+    <p class="small-content-title">3. Knowledge update issues</p>
+    Due to LLMs completing training at specific points in time, they cannot obtain or understand events or new information that occur after training. For example, the update date of a database of GPT 4 is April 2023 based on its response. Therefore, LLM is unable to track the latest messages in real-time, rendering its database outdated which may lead to mistakes in some information.<br>
+    <br>
+    <p class="small-content-title">4. Restrictions on input and output length</p>
+LLM has restrictions on input and output length. For example, according to the documentation of GPT-4, its text input is limited to 25,000 words, which means that users must express their queries or instructions within a certain number of words. This makes it impossible for LLM to process a large amount of text simultaneously, such as legal documents or books. Therefore, users must split the complete text into several parts and input them separately, which takes longer and reduces usage efficiency. In addition, LLM also has a limit on the output length. According to OpenAI's statement in the document(2024), the context length of GPT-4 is now limited to 8192 tokens, which means that 8,192 tokens can represent approximately 6,000 to 7,000 English words. For applications that require a large amount of text, The current length of requirements, such as legal documents and books, may not necessarily meet user needs. Therefore, for LLM, restrictions on input and output text affect the user experience.
+<br>
+    </p>
+
+    <br>
+    <br>
+    <br>
+
+<p class="big-content-title" style="color: green;">
+    Suggestions of Mitigate Limitations<br>
+</p>
+
+<p>
+Currently, there are no effective solutions for the issues of understanding problems and the limitation of content in large language models (LLMs). We can only anticipate advancements in AI technology to mitigate these two challenges. However, the other three limitations can be addressed through specific measures.<br>
+<br>
+
+<p class="small-content-title">1. Reducing Bias and Inequity through Extensive Training Data<br></p>
+Careful selection and preprocessing of training data are necessary to eliminate potential biases. Moreover, employing a vast array of training materials from diverse sources within the same domain can also help reduce bias. The reason is that there are some training materials with slight mistakes and many training resources in one domain can avoid these mistakes as much as possible. <br>
+<br>
+
+<p class="small-content-title">2. Regular Model Updates<br></p>
+Regular updating of LLM databases is essential to incorporate new data and events. Explorations of online learning technologies allowing models to update their knowledge bases in real time are also beneficial. For example, there are some LLMs that start to connect to the Internet and the model can directly collect information via Internet search results such as Copilot from Microsoft. <br>
+<br>
+
+<p class="small-content-title">3. Upload document/embedding layer<br></p>
+In order to solve the problem of LLM text limitations, users can first place the text in a document, such as a PDF document, and then embed the document into LLM, thereby directly accessing the required small part of the content in the embedded document. According to Klarity's approach, embedding is a way of representing content as a simple sequence of numbers, which makes it faster to perform other operations. Rather than simply feeding large amounts of text into an LLM, Klarity uses embedding layers to select the parts of a document that are most relevant to a specific query and then processes only those parts. By processing only part of the content, the text limitati<br>
+
+</p>
+
+<p>
+    Next, we will talk about our <a href= https://www.cityu.edu.hk>Discovery.</a>
+</p>
+
+<br>
+<br>
+
+
+    <p class="small-content-title">Reference</p>
+<ol>
+    <li>Lewis, M., & Mitchell, M. (2024). Using Counterfactual Tasks to Evaluate the Generality of Analogical Reasoning in Large Language Models. arXiv. https://doi.org/10.48550/arXiv.2402.08955</li>
+
+    <li>Elizabeth Kolbert. The Obscene Energy Demands of A.I. New Yorker Magazine https://www.newyorker.com/news/daily-comment/the-obscene-energy-demands-of-ai</li>
+    
+    <li>Kerner, S. M. (2023). What are large language models? TechTarget. https://www.techtarget.com/whatis/definition/large-language-model-LLM</li>
+    
+    <li>Openai documentation https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo</li>
+</ol>
+
+
+</body>
+</html>
